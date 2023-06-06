@@ -100,7 +100,7 @@
         </div>
         
         <div class="resumebtn">
-            <a href="./assets/images/Rutuj Gopale_Resume.pdf" class="btn"><span>Resume</span>
+            <a id="resume-link-1" id="resume-link-2" href="./assets/images/Rutuj Gopale_Resume.pdf" class="btn" target="_blank" download><span>Resume</span>
                 <i class="fas fa-chevron-right"></i>
             </a>
         </div>
@@ -436,5 +436,18 @@
 </script>
 
 <!-- __________________________x_____________________________________ -->
+
+<script>
+  function openResumeInNewTab(event) {
+      // event.preventDefault(); // Prevent the default download behavior
+      var resumeURL = event.target.href;
+      window.open("./assets/images/Rutuj Gopale_Resume.pdf", '_blank'); // Open the resume in a new tab
+  }
+
+  // Attach event listeners to the resume links
+  document.getElementById('resume-link-1').addEventListener('click', openResumeInNewTab);
+  document.getElementById('resume-link-2').addEventListener('click', openResumeInNewTab);
+</script>
+
 </body>
 </html>
