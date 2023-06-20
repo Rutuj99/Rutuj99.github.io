@@ -14,7 +14,8 @@
     />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+     <!-- _________ ICON-->
+     <script src="https://kit.fontawesome.com/d5e11ff79d.js" crossorigin="anonymous"></script>
     <!-- FAVICON -->
     <link
       class="favicon"
@@ -52,17 +53,18 @@
 
     <!-- SWEET ALERT -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="particles.min.js"></script>
   </head>
 
   <body>
     <!-- Navbar Start-->
-    <nav class="navbar" id="nav-menu">
+    <nav class="navbar" class="navbar2" id="nav-menu" >
       <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
       </div>
       <div class="max-width">
         <div class="logo">
-          <a href="#"><span>Rutuj Gopale</span></a>
+          <i style="font-size:25px;" class="fa-solid fa-user" ></i> <a href="#"><span>Rutuj </span></a>
         </div>
         <ul class="nav-link menu">
           <li><a href="#home" class="menu-btn nav-link home">Home </a></li>
@@ -95,15 +97,16 @@
     <button id="btnScrollToTop">
       <i class="material-icons">arrow_upward</i>
     </button>
-
+   
     <!-- home section start-->
     <section class="home" id="home">
+      
       <div class="max-width">
         <div class="home-content">
-          <div class="text-1" data-aos="fade-up">Hello, My Name Is</div>
-          <div class="text-2" id="user-detail-name">Rutuj Gopale</div>
+          <div class="text-1" data-aos="fade-up">Hi There,</div>
+          <div class="text-2" id="user-detail-name">I'm Rutuj <span style="color: rgb(102, 0, 153);">Gopale</span></div>
           <div class="text-3">
-            I'm an <span class="typing" id="user-detail-intro"></span>
+            I am into <span class="typing" id="user-detail-intro"></span>
           </div>
           <div>
             <a
@@ -126,12 +129,13 @@
       <div class="max-width">
         <h2 class="title" data-aos="fade-down">About Me</h2>
         <div class="about-content">
-          <div class="column left" data-aos="fade-right">
-            <img src="./images/full-stack-developer.jpg" alt="" />
+          <div class="column left" data-aos="fade-right" >
+            <img style="border-radius: 200px;" src="../Rutuj99.github.io/myimages/hero.png" alt="" />
           </div>
           <div class="column right" data-aos="fade-up">
             <div class="text">
-              I'm Rutuj Gopale and I'm a <span class="typing-2"></span>
+              I'm Rutuj  
+              <h6 style="color: rgb(102, 0, 153);">Full Stack Developer</h6>
             </div>
             <p class="paragraph" id="user-detail-intro">
               I am a passionate Full Stack Web Developer skilled in the MERN stack, having acquired comprehensive
@@ -157,6 +161,7 @@
                   class="linkdin_link"
                   alt="linkdin"
               /></a>
+             
             </div>
           </div>
         </div>

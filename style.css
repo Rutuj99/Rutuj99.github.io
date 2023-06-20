@@ -19,6 +19,7 @@ body {
 .favicon {
   border-radius: 50%;
 }
+
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -29,9 +30,10 @@ body {
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: 30px 0;
+  padding: 5px 0;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
+  background-color:rgb(226, 181, 248);
 }
 
 .navbar.sticky {
@@ -41,7 +43,7 @@ body {
 
 .navbar.sticky::before {
   content: "";
-  background-color: rgb(102, 0, 153);
+  background-color: rgb(202, 100, 253);
   position: absolute;
   opacity: 1;
   top: -10px;
@@ -59,9 +61,10 @@ body {
 }
 
 .navbar .logo a {
-  color: black;
-  font-size: 30px;
+  color: rgb(244, 244, 244);
+  font-size: 25px;
   font-weight: 600;
+ 
 }
 
 .navbar .logo a span {
@@ -90,7 +93,7 @@ body {
   margin-left: 25px;
   transition: color 0.3s;
   /* color: white; */
-  color: rgb(193, 187, 245);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   display: inline-block;
   padding: 15px 20px;
@@ -123,7 +126,7 @@ body {
 }
 
 .menu-btn {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 30px;
   cursor: pointer;
   display: none;
@@ -140,32 +143,37 @@ body {
   background-attachment: fixed;
   height: 100vh;
   color: black;
-  min-height: 500px;
+  min-height: 100px;
   font-family: "Ubuntu", sans-serif;
+  background-color: #eef5fa;
+  border: 2px solid black;
 }
 
 #home .max-width {
-  margin: auto 0px auto 90px;
+  margin: auto 220px auto 90px;
   display: flex;
+  justify-content: space-between;
+  /* background-color: #e34c26; */
 }
 
 #home .max-width .home-content {
-  padding-top: 220px;
+  padding-top: 120px;
   padding-left: 10px;
+  /* background-color: #3c873a; */
 }
 
 #home .home-content .text-1 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 #home .home-content .text-2 {
-  font-size: 55px;
+  font-size: 65px;
   font-weight: 600;
   margin-left: -3px;
 }
 
 #home .home-content .text-3 {
-  font-size: 35px;
+  font-size: 45px;
   margin: 5px 0;
 }
 
@@ -202,8 +210,8 @@ body {
 }
 
 #home .passport {
-  margin-left: 150px;
-  padding-top: 200px;
+  /* background-color: #0078d7; */
+  padding-top: 100px;
   width: 20%;
 }
 
@@ -211,6 +219,7 @@ body {
   width: 100%;
   border-radius: 10%;
   border: 1px solid #fff;
+  /* margin-left: 500px; */
 }
 
 /* all similar styling */
@@ -239,10 +248,10 @@ section .title {
   position: relative;
   text-align: center;
   color: rgb(102, 0, 153);
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 500;
-  margin-bottom: 80px;
-  padding-bottom: 20px;
+  margin-bottom: 70px;
+  padding-bottom: 40px;
   font-family: "Ubuntu", sans-serif;
 }
 section .title::before {
@@ -300,8 +309,11 @@ section .title::after {
   color: rgb(102, 0, 153);
 }
 .about .about-content .right .paragraph {
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 18px;
+  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  
+  letter-spacing: 2px;
 }
 .about .about-content .right .p {
   text-align: justify;
@@ -320,6 +332,11 @@ section .title::after {
 
 .about #about_contact img {
   width: 100%;
+ 
+}
+
+#about{
+  background-color: #b7d9fb;  
 }
 
 /* projects styling */
@@ -721,7 +738,7 @@ section .title::after {
     width: 100%;
     left: -100%;
     top: 0;
-    background: black;
+    background: rgb(246, 243, 243);
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
@@ -814,7 +831,7 @@ section .title::after {
 @media (max-width: 500px) {
   .home .home-content .text-1 {
     font-size: 20px;
-  }
+  }fa-
 
   .home .home-content .text-2 {
     font-size: 30px;
@@ -835,3 +852,9 @@ section .title::after {
     margin-top: 25px;
   }
 }
+
+
+/* _____________________________x_________________________________________ */
+
+
+
