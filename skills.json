@@ -16,6 +16,14 @@
         "icon": "https://img.icons8.com/color/48/000000/redux.png"
     },
     {
+        "name": "ExpressJS",
+        "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+    },
+    {
         "name": "TailwindCSS",
         "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png"
     },
@@ -53,7 +61,18 @@
     },
     {
         "name": "Canva",
-        "icon": "https://static.canva.com/static/images/favicon-1.ico"
+        "icon": "https://img.icons8.com/fluency/48/canva.png"
+    },
+    {
+        "name":"SharePoint",
+        "icon":"https://img.icons8.com/fluency/48/microsoft-sharepoint-2019.png"
+    },
+    {
+        "name":"PowerApps",
+        "icon":"https://img.icons8.com/fluency/48/microsoft-power-apps-2020.png"
+    },{
+        "name":"Automate",
+        "icon":"https://img.icons8.com/fluency/48/microsoft-power-automate-2020.png"
     }
    
     
