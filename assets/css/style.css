@@ -1324,28 +1324,29 @@ form .button-area {
   .github {
     width: 100%;
     height: 920px;
-    background-color: #bda4f6;
+    /* background-color: #bda4f6; */
+    background-color:black;
     margin-bottom: -100px;
+
   }
 
-  .git-first-box {
-    background-color: #ffffff;
-    margin-top: 20px;
-    color: rgb(0, 0, 0);
-  }
 
-  .max-width {
-    display: flex;
-    
-    align-items: center;
-    margin-right: 300px;
-   
+ 
+
+  #github-streak-status{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
   }
-  #github-top-langs {
-    height: 100%;
-  }
+  
+
 }
 
+@media (max-width: 768px) {
+  #github-streak-status{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+}
 
 /* _____________________css projects________________________________ */
 
