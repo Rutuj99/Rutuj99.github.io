@@ -64,6 +64,7 @@
     <a href="#about" class="btn"><span>About Me</span>
       <i class="fas fa-arrow-circle-down"></i>
     </a>
+   
     <div class="socials">
         <ul class="social-icons">
           <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/rutuj-gopale-827aab1ba/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
@@ -114,11 +115,51 @@
             </div>
         </div>
         
-        <div class="resumebtn"  class="nav-link resume">
-            <a href="./assets/images/Rutuj Gopale_Resume.pdf" class="btn"><span>Resume</span>
+        <!-- <div class="resumebtn" >
+            <a href="./assets/images/Rutuj Gopale_Resume.pdf"  id="resume-button-2" class="btn"><span>Resume</span>
                 <i class="fas fa-chevron-right"></i>
             </a>
-        </div>
+        </div> -->
+        <!-- <div class="resumebtn" >
+          <a href="./assets/images/Rutuj Gopale_Resume.pdf" id="resume-button-2" class="btn" target="_blank" download="Rutuj_Gopale_Resume.pdf">
+              <span  target="_blank">Resume</span>
+              <i class="fas fa-chevron-right" ></i>
+          </a>
+      </div> -->
+      <div class="resumebtn">
+        <a href="#" id="resume-button-2" class="btn" onclick="downloadAndOpenResume(event)">
+          <span>Resume</span>
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      
+      <script>
+        function downloadAndOpenResume(event) {
+          event.preventDefault();
+          var url = './assets/images/Rutuj Gopale_Resume.pdf';
+          var fileName = 'Rutuj Gopale_Resume.pdf';
+      
+          fetch(url)
+            .then(response => response.blob())
+            .then(blob => {
+              var fileURL = URL.createObjectURL(blob);
+      
+              // Trigger the file download
+              var link = document.createElement('a');
+              link.href = fileURL;
+              link.download = fileName;
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+      
+              // Open the file in a new tab
+              window.open(fileURL, '_blank');
+            })
+            .catch(error => console.log(error));
+        }
+      </script>
+      
+        
 
     </div>
     </div>
