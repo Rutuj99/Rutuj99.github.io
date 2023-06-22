@@ -61,9 +61,45 @@
     <div class="content" style="margin-top: 40px;">
     <h2>Hi There,<br/> I'm Rutuj <span>Gopale</span></h2>
     <p>i am into <span class="typing-text"></span></p>
-    <a href="#about" class="btn"><span>About Me</span>
-      <i class="fas fa-arrow-circle-down"></i>
-    </a>
+   
+        <!-- <a href="#about" class="btn"><span>About Me</span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </a> -->
+      <div class="resumebtn" style="margin-top: -15px;">
+        <a href="#" id="resume-button-1" class="btn" onclick="downloadAndOpenResume(event)">
+          <span>Resume</span>
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      
+      <script>
+        function downloadAndOpenResume(event) {
+          event.preventDefault();
+          var url = './assets/images/Rutuj Gopale_Resume.pdf';
+          var fileName = 'Rutuj Gopale_Resume.pdf';
+      
+          fetch(url)
+            .then(response => response.blob())
+            .then(blob => {
+              var fileURL = URL.createObjectURL(blob);
+      
+              // Trigger the file download
+              var link = document.createElement('a');
+              link.href = fileURL;
+              link.download = fileName;
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+      
+              // Open the file in a new tab
+              window.open(fileURL, '_blank');
+            })
+            .catch(error => console.log(error));
+        }
+      </script>
+      
+      
+    
    
     <div class="socials">
         <ul class="social-icons">
@@ -83,6 +119,7 @@
 <!-- about section starts -->
 <section  class="about section" id="about" >
     <h2 class="heading" class="title"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
     
     <div class="row">
 
