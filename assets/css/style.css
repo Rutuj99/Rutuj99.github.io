@@ -1361,18 +1361,36 @@ form .button-area {
 @media (max-width: 768px) {
   .github {
     background-color: #afb5f2;
-    margin-bottom: -100px;
+    margin-bottom: -200px;
+    font-size: 20px;
+    
   }
 
   #github-streak-status{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
-#git-bottom{
-  background-color: red;
-}
+
+
+
    
 }
+
+#github-stack img{
+  max-width: 100%;
+}
+
+/* #github-stats-card{
+  
+}
+
+#github-top-langs{
+  max-width: 100%;
+}
+
+#git-bottom{
+  max-width: 100%;
+} */
 
 /* _____________________css projects________________________________ */
 
