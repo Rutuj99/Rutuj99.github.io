@@ -76,7 +76,7 @@
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1pe553ev0eIVhSGDBBHa_Bx4SfgMffJxb/view?usp=sharing"
+            onclick="downloadAndOpenResume(event)"
               class="menu-btn nav-link resume"
               id="resume-button-1"
               download="Rutuj-Gopale-Resume"
@@ -85,6 +85,35 @@
               <i class="material-icons" id="download">download</i>
             </a>
           </li>
+          <!-- _________________ -->
+         
+          <script>
+            function downloadAndOpenResume(event) {
+              event.preventDefault();
+              var url = './myimages/projects/Rutuj Gopale_Resume.pdf';
+              
+              var fileName = 'Rutuj Gopale_Resume.pdf';
+          
+              fetch(url)
+                .then(response => response.blob())
+                .then(blob => {
+                  var fileURL = URL.createObjectURL(blob);
+          
+                  // Trigger the file download
+                  var link = document.createElement('a');
+                  link.href = fileURL;
+                  link.download = fileName;
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+          
+                  // Open the file in a new tab
+                  window.open(fileURL, '_blank');
+                })
+                .catch(error => console.log(error));
+            }
+          </script>
+          <!-- __________________________________ -->
         </ul>
         <div class="menu-btn">
           <i class="material-icons">menu</i>
@@ -107,12 +136,41 @@
           </div>
           <div>
             <a
-              href="https://drive.google.com/file/d/1pe553ev0eIVhSGDBBHa_Bx4SfgMffJxb/view?usp=sharing"
+            onclick="downloadAndOpenResume(event)"
               id="resume-button-2"
               download="Rutuj-Gopale-Resume"
               >Resume<i class="material-icons" id="download1">download</i></a
             >
           </div>
+           <!-- _________________ -->
+         
+           <script>
+            function downloadAndOpenResume(event) {
+              event.preventDefault();
+              var url = './myimages/projects/Rutuj Gopale_Resume.pdf';
+              
+              var fileName = 'Rutuj Gopale_Resume.pdf';
+          
+              fetch(url)
+                .then(response => response.blob())
+                .then(blob => {
+                  var fileURL = URL.createObjectURL(blob);
+          
+                  // Trigger the file download
+                  var link = document.createElement('a');
+                  link.href = fileURL;
+                  link.download = fileName;
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+          
+                  // Open the file in a new tab
+                  window.open(fileURL, '_blank');
+                })
+                .catch(error => console.log(error));
+            }
+          </script>
+          <!-- __________________________________ -->
         </div>
         <div class="passport">
           <img class="home-img" src="./myimages\New_Photo.png" alt="passport" />
@@ -365,7 +423,7 @@
               <div class="text project-title">Nike.com</div>
               <div class="projectDetails">
                 <div class="projectImg">
-                  <img src="../hasbealam.github.io/myimages/projects/Nike.png" alt="p1" />
+                  <img src="./myimages/projects/Nike.png" alt="p1" />
                 </div>
                 <div class="projectInfo">
                   <b class="project-description">
@@ -392,7 +450,60 @@
                   <div class="links">
                     <div class="projectLinks">
                       <a
-                        href="ttps://github.com/Rutuj99/Nike-Website_Clone-React"
+                        href="https://github.com/Rutuj99/Nike-Website_Clone-React"
+                        class="project-github-link"
+                      >
+                        <b>Github</b>
+                      </a>
+                      <img
+                        src="images/skill-icons/github.svg"
+                        class="projectBtn"
+                        alt=""
+                      />
+                    </div>
+                    <div class="projectLinks">
+                      <a
+                        href="https://nikeclonereact.netlify.app/"
+                        class="project-deployed-link"
+                      >
+                        <b>Live</b>
+                      </a>
+                      <img
+                        src="images/skill-icons/deploy-svgrepo-com.svg"
+                        class="projectBtn"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- project-2  -->
+          <div class="card project-card" data-aos="flip-left">
+            <div class="box">
+              <i class="fas fa-laptop-code"></i>
+              <div class="text project-title">OverStock.com</div>
+              <div class="projectDetails">
+                <div class="projectImg">
+                  <img src="./myimages/projects/instagrammern.png" alt="p1" />
+                </div>
+                <div class="projectInfo">
+                  <b class="project-description">
+                    Website offer a wide selection of high-quality merchandise at a great value to help you turn your house into the home you've always wanted.
+                  </b>
+                  <div class="techStack">
+                    <img src="images/skill-icons/icons8-html-5.svg" alt="" />
+                    <img src="images/skill-icons/icons8-css3.svg" alt="" />
+                    <img
+                      src="images/skill-icons/icons8-javascript.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="links">
+                    <div class="projectLinks">
+                      <a
+                        href="https://github.com/Rutuj99/OverStock-Clone"
                         class="project-github-link"
                       >
                         <b>Github</b>
@@ -421,73 +532,18 @@
               </div>
             </div>
           </div>
-          <!-- project-2  -->
-          <div class="card project-card" data-aos="flip-left">
-            <div class="box">
-              <i class="fas fa-laptop-code"></i>
-              <div class="text project-title">Flipkart.com</div>
-              <div class="projectDetails">
-                <div class="projectImg">
-                  <img src="images/flipkart.png" alt="p1" />
-                </div>
-                <div class="projectInfo">
-                  <b class="project-description">
-                    An e-commerce website where users can explore and buy
-                    clothes, electronics, groceries, etc.
-                  </b>
-                  <div class="techStack">
-                    <img src="images/skill-icons/icons8-html-5.svg" alt="" />
-                    <img src="images/skill-icons/icons8-css3.svg" alt="" />
-                    <img
-                      src="images/skill-icons/icons8-javascript.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="links">
-                    <div class="projectLinks">
-                      <a
-                        href="https://github.com/hasbealam/flipkart-clone"
-                        class="project-github-link"
-                      >
-                        <b>Github</b>
-                      </a>
-                      <img
-                        src="images/skill-icons/github.svg"
-                        class="projectBtn"
-                        alt=""
-                      />
-                    </div>
-                    <div class="projectLinks">
-                      <a
-                        href="https://flipkart-clone-eight-pi.vercel.app/"
-                        class="project-deployed-link"
-                      >
-                        <b>Live</b>
-                      </a>
-                      <img
-                        src="images/skill-icons/deploy-svgrepo-com.svg"
-                        class="projectBtn"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <!-- project-3  -->
           <div class="card project-card" data-aos="flip-left">
             <div class="box">
               <i class="fas fa-laptop-code"></i>
-              <div class="text project-title">Bluefly.com</div>
+              <div class="text project-title">Trivago.com</div>
               <div class="projectDetails">
                 <div class="projectImg">
-                  <img src="images/bluefly.png" alt="p1" />
+                  <img src="./myimages/projects/flipkartmern.png" alt="p1" />
                 </div>
                 <div class="projectInfo">
                   <b class="project-description">
-                    An e-commerce website for female users where they can
-                    explore and buy high-end clothes and accessories.
+                    Trivago is a metasearch engine that compares accommodation prices and offers provided by many different online booking sites. 
                   </b>
                   <div class="techStack">
                     <img src="images/skill-icons/icons8-html-5.svg" alt="" />
@@ -534,21 +590,21 @@
           <div class="card project-card" data-aos="flip-left">
             <div class="box">
               <i class="fas fa-laptop-code"></i>
-              <div class="text project-title">Portfolio</div>
+              <div class="text project-title">Leave Management App.com</div>
               <div class="projectDetails">
                 <div class="projectImg">
-                  <img src="images/portfolio.png" alt="p1" />
+                  <img src="./myimages/projects/Sharepoint.png" alt="p1" />
                 </div>
                 <div class="projectInfo">
                   <b class="project-description"
-                    >A website where prospect recruiter can see the details
-                    about the person.
+                    >Leave-Management-App is a web application built to streamline the process of managing leave requests within an organization.
+                  </h1>
                   </b>
                   <div class="techStack">
-                    <img src="images/skill-icons/icons8-html-5.svg" alt="" />
-                    <img src="images/skill-icons/icons8-css3.svg" alt="" />
+                    <img src="https://img.icons8.com/fluency/48/microsoft-power-apps-2020.png" alt="" />
+                    <img src="https://img.icons8.com/fluency/48/microsoft-power-automate-2020.png" alt="" />
                     <img
-                      src="images/skill-icons/icons8-javascript.svg"
+                      src="https://img.icons8.com/fluency/48/microsoft-sharepoint-2019.png"
                       alt=""
                     />
                   </div>
@@ -556,7 +612,7 @@
                   <div class="links">
                     <div class="projectLinks">
                       <a
-                        href="https://github.com/hasbealam/hasbealam.github.io"
+                        href="https://github.com/Rutuj99/Leave-Management-App---Power-Apps"
                         class="project-github-link"
                       >
                         <b>Github</b>
@@ -569,7 +625,7 @@
                     </div>
                     <div class="projectLinks">
                       <a
-                        href="https://hasbealam.github.io/"
+                        href="https://apps.powerapps.com/play/e/default-0a9788cc-0df2-45b2-857e-e6c3fa127f1d/a/58415fba-ea96-4cf4-8044-ac9da4eb9608?tenantId=0a9788cc-0df2-45b2-857e-e6c3fa127f1d"
                         class="project-deployed-link"
                       >
                         <b>Live</b>
