@@ -135,6 +135,13 @@ body {
   position: absolute;
 }
 
+.self-image{
+   border: 2px solid orange;
+   border-radius: 5%;
+   
+   
+}
+
 #home {
   display: flex;
   justify-content: space-between;
@@ -233,6 +240,7 @@ section {
 .contact,
 footer {
   font-family: "Poppins", sans-serif;
+  
 }
 .about .about-content,
 .projects .serv-content,
